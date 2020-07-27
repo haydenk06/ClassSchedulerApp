@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity"
+    android:orientation="vertical"
+    tools:menu="@menu/menu_main"
+    android:background="@color/colorPrimary">
+
+    <Button
+        android:id="@+id/button_term"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorText"
+        android:text="Term"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button_courses"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorText"
+        android:layout_below="@+id/button_term"
+        android:layout_centerHorizontal="true"
+        android:text="Courses"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/button_mentors"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorText"
+        android:layout_below="@+id/button_courses"
+        android:layout_centerHorizontal="true"
+        android:text="Mentors"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/button_assessments"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorText"
+        android:layout_below="@+id/button_mentors"
+        android:layout_centerHorizontal="true"
+        android:text="Assessments"
+        android:textSize="25sp"/>
+</RelativeLayout>

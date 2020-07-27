@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="Activity.AssessmentDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_assessment_title"
+            android:layout_width="@dimen/detail_label_width"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:hint="A123"
+            android:textSize="@dimen/detail_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_edit_assessment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="130dp"
+            android:backgroundTint="@color/colorAccent"
+            android:src="@drawable/ic_edit"
+            app:fabSize="mini"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/text_view_due_date_label"
+            android:layout_width="@dimen/detail_label_width"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Due Date"
+            android:textSize="@dimen/detail_text_size"
+            app:layout_constraintStart_toEndOf="@id/text_view_due_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_assessment_title" />
+
+        <TextView
+            android:id="@+id/text_view_due_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="@dimen/text_margin"
+            android:text="Due Date"
+            android:textSize="@dimen/detail_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/text_view_due_date_label"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_type_label"
+            android:layout_width="@dimen/detail_label_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:text="Type"
+            android:textSize="@dimen/detail_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_due_date_label"/>
+
+        <TextView
+            android:id="@+id/text_view_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="@dimen/text_margin"
+            android:text="Type"
+            android:textSize="@dimen/detail_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/text_view_type_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_due_date" />
+
+        <TextView
+            android:id="@+id/text_view_course_label"
+            android:layout_width="@dimen/detail_label_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:text="Course"
+            android:textSize="@dimen/detail_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_type_label"/>
+
+        <TextView
+            android:id="@+id/text_view_course"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="@dimen/text_margin"
+            android:text="Course"
+            android:textSize="@dimen/detail_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/text_view_course_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_type" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
