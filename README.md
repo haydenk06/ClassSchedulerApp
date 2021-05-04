@@ -1,7 +1,7 @@
-# ClassSchedulerApp
+# ClassTrackerApp
 Mobile Application
 Overview:
-This Android application is a basic student scheduler built with Java. It allows a student to:
+This Android application is a basic student class tracker built with Java. It allows a student to:
 
 Track Terms
 Track Courses in a given Term with added feature of saving notes for each course
